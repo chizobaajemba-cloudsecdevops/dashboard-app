@@ -42,7 +42,7 @@ jobs:
 
   Add-Okra-and-other-vegetables-6:
         runs-on: ubuntu-latest
-        needs: Add-salt-and-pepper-5
+        needs: [Add-salt-and-pepper-5,Parboiling-fish-4]
         steps:
           - name: Add Okra and other vegetables
             run: echo "Okra and other vegetables added"
