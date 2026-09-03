@@ -21,7 +21,7 @@ jobs:
 
   Set-up-gas-for-cooking-3:
         runs-on: ubuntu-latest
-        needs: Preparation-2
+        needs: [Preparation-2,List-of-Ingredients-1]
         steps:
           - name: Set up gas for cooking
             run: echo "Gas is set up for cooking"
