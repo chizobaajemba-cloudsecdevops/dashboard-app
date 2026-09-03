@@ -14,30 +14,35 @@ jobs:
         
   Preparation-2:
         runs-on: ubuntu-latest
+        needs: List-of-Ingredients-1
         steps:
           - name: Prepare all ingredients
             run: df -h
 
   Set-up-gas-for-cooking-3:
         runs-on: ubuntu-latest
+        needs: Preparation-2
         steps:
           - name: Set up gas for cooking
             run: echo "Gas is set up for cooking"
 
   Parboiling-fish-4:
         runs-on: ubuntu-latest
+        needs: Set-up-gas-for-cooking-3
         steps:
           - name: Parboil the fish
             run: echo "Fish is parboiled"
 
   Add-salt-and-pepper-5:
         runs-on: ubuntu-latest
+        needs: Parboiling-fish-4
         steps:
           - name: Add salt and pepper
             run: echo "Salt and pepper added"
 
   Add-Okra-and-other-vegetables-6:
         runs-on: ubuntu-latest
+        needs: Add-salt-and-pepper-5
         steps:
           - name: Add Okra and other vegetables
             run: echo "Okra and other vegetables added"
