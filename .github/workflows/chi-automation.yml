@@ -1,0 +1,54 @@
+name: How to cook Okra soup
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  List-of-Ingredients-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List all ingredients
+        run: hostnamectl
+        
+  Preparation-2:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Prepare all ingredients
+            run: df -h
+
+  Set-up-gas-for-cooking-3:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Set up gas for cooking
+            run: echo "Gas is set up for cooking"
+
+  Parboiling-fish-4:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Parboil the fish
+            run: echo "Fish is parboiled"
+
+  Add-salt-and-pepper-5:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Add salt and pepper
+            run: echo "Salt and pepper added"
+
+  Add-Okra-and-other-vegetables-6:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Add Okra and other vegetables
+            run: echo "Okra and other vegetables added"
+
+
+
+
+
+
+
+  
+
+
+ 
