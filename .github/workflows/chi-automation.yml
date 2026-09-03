@@ -35,7 +35,7 @@ jobs:
 
   Add-salt-and-pepper-5:
         runs-on: ubuntu-latest
-        needs: Set-up-gas-for-cooking-3
+        needs: [Preparation-2,Set-up-gas-for-cooking-3]
         steps:
           - name: Add salt and pepper
             run: echo "Salt and pepper added"
